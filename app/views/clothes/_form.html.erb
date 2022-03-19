@@ -1,0 +1,30 @@
+<%= form_with model: @clothe, local: true do |f|%>
+  <div class="field">
+    <%= f.label :memo, "memo" %><br />
+    <%= f.text_field :memo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date, "date" %><br />
+    <%= f.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :season, "season" %><br />
+    <%= f.text_field :season %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color, "color" %><br />
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "your clothes" %><br />
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
