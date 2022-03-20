@@ -4,7 +4,7 @@
 # アプリケーション概要
 - 自身のクローゼットの洋服管理に役立てることができる。
 # URL
-- http://
+- https://closet-37448.herokuapp.com/
 
 # テスト用アカウント
 - Basic認証パスワード :10801
@@ -26,15 +26,21 @@
 - 洋服の季節、カラーを入力して検索できる
 
 # 実装予定の機能
-- 洋服をカテゴリーに分け、検索しやすくする機能を実装予定。
+- 洋服の種類をカテゴリーに分け、ransackを導入して検索しやすくする機能を実装予定。
 
 # データベース設計、画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/3d6212dc5684f59179e9b6b2b3338c8a.png)](https://gyazo.com/3d6212dc5684f59179e9b6b2b3338c8a)
+[![Image from Gyazo](https://i.gyazo.com/e407eef541075f5e8108ef9e1aec64ee.png)](https://gyazo.com/e407eef541075f5e8108ef9e1aec64ee)
 
 # 開発環境
-- HTML/CSS/Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
+- HTML/CSS/Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code
 
 # ローカルでの動作方法
+- % git clone https://github.com/kayo10801/closet
+- % cd closet
+- % bundle install
+- % yarn install
+- % rails db:create
+- % rails db:migrate
+- % rails s
 
-# 工夫したポイント
 

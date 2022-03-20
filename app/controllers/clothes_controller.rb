@@ -44,10 +44,7 @@ before_action :set_clothe, only: [:edit, :update, :destroy, :show]
     end
   end
 
-  def search
-    #@clothe = Clothe.find(params[:id])
-    @clothes = Clothe.search(params[:keyword])
-  end
+ 
 
   private
   def clothe_params

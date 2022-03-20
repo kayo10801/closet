@@ -8,7 +8,7 @@ class Clothe < ApplicationRecord
   def self.search(search)
     
     if search != ""
-      Clothe.where('season LIKE(?)', "%#{search}%")
+      Clothe.where(['season LIKE(?) OR color LIKE(?)', "%#{search}%","%#{search}%"])
     else
       Clothe.all
     end
