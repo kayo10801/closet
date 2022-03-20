@@ -1,5 +1,5 @@
 class ClothesController < ApplicationController
-before_action :set_clothe, except: [:index, :new, :create]
+before_action :set_clothe, only: [:edit, :update, :destroy, :show]
 
   def index
     @clothes = Clothe.all
@@ -43,6 +43,8 @@ before_action :set_clothe, except: [:index, :new, :create]
       redirect_to root_path
     end
   end
+
+ 
 
   private
   def clothe_params
