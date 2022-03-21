@@ -37,10 +37,16 @@ a {
 /* ヘッダー */
 
 .header {
+  width: 100vh;
   background-color: #f1f8fe;
   margin-bottom: 48px;
   padding: 20px 0;
-
+  background-image: url('closet.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-width: 100%;
+  height: 30vh;
 }
 .inner {
   width: 1024px;
@@ -51,36 +57,65 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.search-btn {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #302f25;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #535347 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  opacity: 0.5;
+}
+.search-input {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #141516;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #141516 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  opacity: 0.5;
+}
+
 .logo {
   width: 200px;
+  color: #f1f8fe;
+  font-size: 100px;
 }
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #686b6d;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px #5d5f61 solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
-  color: #fff;
-  background: #87CEFA;
+  color: rgb(128, 127, 120);
+  background: #f7f6f3f8;
 }
 
 .nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #626466;
   text-decoration: none;
   user-select: none;
 }
 .nav__logout:hover{
   opacity: 0.5;
 }
+
+
 
 /* フォーム周り */
 .form__wrapper{
@@ -106,15 +141,15 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #dfdbd0;
+  border: 1px #635d40 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
 }
 
 .form__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 6px 0 rgba(139, 88, 88, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -269,12 +304,12 @@ a {
 /* フッター */
 
 .footer {
-  background-color: #999;
+  background-color: rgba(241, 239, 224, 0.932);
   padding: 10px 0;
 }
 .copyright {
   text-align: center;
-  color: #fff;
+  color: rgb(59, 54, 35);
   font-size: 10px;
 }
 
