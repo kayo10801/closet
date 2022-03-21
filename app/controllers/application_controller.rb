@@ -3,6 +3,9 @@ class ApplicationController < ActionController::Base
   before_action :basic_auth
 
 
+  def search
+    @clothes = Clothe.search(params[:keyword])
+    
   private
 
   def basic_auth
