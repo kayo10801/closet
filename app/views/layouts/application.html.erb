@@ -15,18 +15,18 @@
 
       <div class="inner">
         <div class="nav">
-
+                
           <div class="nav__left">
            <%= link_to "Closet.", root_path, class: :logo %>
           </div>
          <div class="nav__right">
             <%= form_with(url: search_clothes_path, local: true, method: :get, class: "search-form") do |fome| %>
-               <%= fome.text_field :keyword, placeholder: "season or color", class: "search-input" %>
+               <%= fome.text_field :keyword, placeholder: "search", class: "search-input" %>
               <%= fome.submit "検索する", class: "search-btn" %>
             <% end %>
               <%= link_to "New clothes", new_clothe_path, class: :nav__btn %>
               <%= link_to "Your clothes", clothes_index_path, class: :nav__btn %>
-
+                       <h6 class="photo">photo by Kelsey Curtis </h6>  
           </div>
         </div>
       </div>
