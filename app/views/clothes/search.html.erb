@@ -1,6 +1,9 @@
-
-<div class="card__wrapper">
-  <% @clothes.each do |clothe| %>
+<main class="main">
+  <div class="inner">
+       <div class="greeting"> 
+       </div> 
+    <div class="card__wrapper">
     <%= render partial: "clothe", collection: @clothes %>
-  <% end %>
-</div>
+  </div>
+  </div>
+</main>
