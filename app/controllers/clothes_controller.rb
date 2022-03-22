@@ -43,10 +43,7 @@ before_action :set_clothe, only: [:edit, :update, :destroy, :show]
       redirect_to root_path
     end
   end
-  def search 
-    seaosn = Clothe.where("season = ?", params[:season]) 
- 
-  end
+  
   private
   def clothe_params
     params.require(:clothe).permit(:memo, :image, :date, :season, :color)
