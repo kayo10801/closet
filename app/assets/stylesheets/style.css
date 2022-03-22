@@ -39,14 +39,14 @@ a {
 .header {
   width: 100vh;
   background-color: #f1f8fe;
-  margin-bottom: 48px;
-  padding: 20px 0;
+  /* margin-bottom: 48px; */
+  /* padding: 20px 0; */
   background-image: url('closet.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   min-width: 100%;
-  height: 30vh;
+  height: 100vh;
 }
 .inner {
   width: 1024px;
@@ -57,16 +57,96 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.logo {
+  width: 200px;
+  color: #f1f8fe;
+  font-size: 100px;
+  position: relative; top: 100px;
+}
+.nav__btn{
+  display: inline-block;
+  /* padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #686b6d;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #5d5f61 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  position: relative; top: 100px; */
+  color: rgb(170, 163, 163);
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  width: 130px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid rgb(211, 209, 209);
+  position: relative; top: 100px;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  transition: .3s;
+}
+.nav__btn:before {
+  content: "";
+  width: 120%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  right: 0;
+  z-index: -1;
+  background: rgb(247, 233, 227);
+  border-radius: 0 100% 100% 0;
+  transform: translateX(-100%);
+  transition: transform ease .3s;
+}
+.nav__btn:hover{
+ color: #fff;
+}
+.nav__btn:hover::before {
+transform: translateX(10%);
+}
+
+/* @keyframes light {
+  100% { 
+    outline-color: transparent;
+    outline-offset: 12px;
+  }
+} */
+
+
+.nav__logout{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #626466;
+  text-decoration: none;
+  user-select: none;
+}
+.nav__logout:hover{
+  opacity: 0.5;
+}
+
 .search-btn {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #302f25;
+  color: #797765;
   text-decoration: none;
   user-select: none;
   border: 1px #535347 solid;
   border-radius: 3px;
   transition: 0.4s ease;
+  cursor: pointer;
+  position: relative; top: 90px;
+  
+}
+.search-btn:hover {
+  color: rgb(235, 234, 227);
+  background: #686763f8;
   opacity: 0.5;
 }
 .search-input {
@@ -80,39 +160,7 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
   opacity: 0.5;
-}
-
-.logo {
-  width: 200px;
-  color: #f1f8fe;
-  font-size: 100px;
-}
-.nav__btn{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #686b6d;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #5d5f61 solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-.nav__btn:hover{
-  color: rgb(128, 127, 120);
-  background: #f7f6f3f8;
-}
-
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #626466;
-  text-decoration: none;
-  user-select: none;
-}
-.nav__logout:hover{
-  opacity: 0.5;
+  position: relative; top: 90px;
 }
 
 
@@ -141,7 +189,7 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #dfdbd0;
+  background: #e6d4a4;
   border: 1px #635d40 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
@@ -154,9 +202,18 @@ a {
 }
 
 /* メイン */
-
+.main{
+  background-image: url('closet.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-color:rgba(179, 174, 174, 0.8);
+  background-blend-mode:lighten;
+  min-width: 100%;
+  
+}
 .greeting{
   margin-bottom: 20px;
+  
 }
 .greeting__link{
   text-decoration: underline;
@@ -178,6 +235,7 @@ a {
 }
 .card__img {
   margin-bottom: 16px;
+  border-radius:50%;
 }
 .card__title {
   display: block;
@@ -253,15 +311,18 @@ a {
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
+  
 }
 
 .comments_lists{
   padding-left: 20px;
+  
 }
 
 .comments_list{
   list-style-type: square;
   padding-bottom: 5px;
+  list-style: none;
 }
 
 .comment_user{
