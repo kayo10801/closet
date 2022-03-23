@@ -46,7 +46,7 @@ before_action :set_clothe, only: [:edit, :update, :destroy, :show]
   
   private
   def clothe_params
-    params.require(:clothe).permit(:memo, :image, :day, :season, :color)
+    params.require(:clothe).permit(:memo, :image, :date, :season, :color)
   end
 
   def set_clothe

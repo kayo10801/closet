@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2022_03_19_142700) do
 
   create_table "clothes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "memo"
-    t.date "day"
+    t.datetime "date"
     t.string "season", null: false
     t.string "color", null: false
     t.datetime "created_at", precision: 6, null: false
