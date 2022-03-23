@@ -46,7 +46,7 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   min-width: 100%;
-  height: 50vh;
+  height: 70vh;
 }
 .inner {
   width: 1024px;
@@ -176,7 +176,7 @@ transform: translateX(10%);
 }
 
 .photo{
-  position: relative; top: 180px
+  position: relative; top: 300px
   
   }
   .nav-lists {
