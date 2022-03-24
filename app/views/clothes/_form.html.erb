@@ -30,14 +30,14 @@
   </div>
 
    <div class="field">
-   <%#= f.label :color, "color" %><br />
-    <%#= f.select :color,[["白","白"],["ベージュ", "ベージュ"],["茶","茶"],["黒", "黒"],["赤","赤"],["オレンジ", "オレンジ"],["黄","黄"],["緑", "緑"],
-    ["紫","紫"],["青","青"],],include_blank: "選択して下さい", class: :form__text %> 
+   <%= f.label :color, "color" %><br />
+   <%= f.select :color,[["白","白"],["ベージュ", "ベージュ"],["茶","茶"],["黒", "黒"],["赤","赤"],["オレンジ", "オレンジ"],["黄","黄"],["緑", "緑"],
+    ["紫","紫"],["青","青"],],include_blank: "選択して下さい", class: :form__text %>
   </div>
 
   <div class="field">
-    <%= f.label :color, "color" %><br />
-    <%= f.color_field :color %>
+     <%#= f.label :color, "color"%><br />
+   <%#= f.color_field :color %> 
     
   </div>
 
