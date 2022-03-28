@@ -4,6 +4,7 @@ class Clothe < ApplicationRecord
   validates :season, presence: true
   validates :color, presence: true
   validates :image, presence: true
+  validates :category, presence: true
   
   def self.search(search)
     

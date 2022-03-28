@@ -18,16 +18,26 @@
                 
           <div class="nav__left">
            <%= link_to "Closet.", root_path, class: :logo %>
-          <h2 class ="h2">クローゼットの洋服を管理しよう</h2>
-           <ul class="nav-lists">
-        <%# <li class="background-red" id="lists">カテゴリー</li> %>
-          </ul>
-    <%# <ul class="show-lists hidden" id="pull-down">
-          <li>リスト1</li>
-          <li>リスト2</li>
-          <li>リスト3</li>
-          <li>リスト4</li>
-          </ul> %>
+           <h2 class ="h2">クローゼットの洋服を管理しよう</h2>
+           
+            <ul class="nav-lists">
+              <li class="list-status">
+                <span id="current-list">選択しよう</span>
+                </li>
+                <li class="background-red" id="lists">カテゴリー
+                </li>
+                <li>カテゴリー変更</li>
+             </ul>
+            
+              <ul class="show-lists hidden" id="pull-down">
+              <li class="pull-down-list">インナー
+              <%#= link to %>
+              </li>
+
+              <li class="pull-down-list">トップス</li>
+              <li class="pull-down-list">アウター</li>
+              <li class="pull-down-list">ボトム</li>
+              </ul>
           </div> 
          <div class="nav__right">
             <%= form_with(url: search_clothes_path, local: true, method: :get, class: "search-form") do |f| %>

@@ -52,13 +52,21 @@ a {
 .inner {
   width: 1024px;
   margin: 0 auto;
+  
 }
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #999;
 }
 
+.nav__left{
+  background-color: aquamarine;
+}
+.nav__right{
+  background-color: antiquewhite;
+}
 .logo {
   width: 200px;
   color: #f1f8fe;
@@ -68,15 +76,6 @@ a {
 } 
 .nav__btn{
   display: inline-block;
-  /* padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #686b6d;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #5d5f61 solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-  position: relative; top: 100px; */
   color: rgb(170, 163, 163);
   font-size: 16px;
   font-weight: bold;
@@ -175,9 +174,7 @@ transform: translateX(10%);
   opacity: 0.5;
   position: relative; top: 90px;
 }
-.search-form{
-  
-}
+
 
 .photo{
   position: relative; top: 300px
@@ -188,7 +185,12 @@ transform: translateX(10%);
     padding: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    
+    
   }
+  
   .red{
     background-color: rgb(238, 229, 229);
   }
@@ -196,16 +198,20 @@ transform: translateX(10%);
     width: 100px;
     position: absolute;
     right: 370px;
-    top: 70px;
+    top: 0;
     background-color: #ffffff;
+    margin: 300px;
+    
   }
   .background-red{
     background-color: #f7e6e6 ;
-    color: white;;
+    color: white;
+    
   }
   .pull-down-list{
     padding: 15px 35px 15px 15px;
     border: 1px solid #eee;
+
   }
   .contents{
     height: 100vh;

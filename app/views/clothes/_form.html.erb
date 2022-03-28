@@ -35,10 +35,9 @@
     ["紫","紫"],["青","青"],],include_blank: "選択して下さい", class: :form__text %>
   </div>
 
-  <div class="field">
-     <%#= f.label :color, "color"%><br />
-   <%#= f.color_field :color %> 
-    
+   <div class="field">
+   <%= f.label :category, "category" %><br />
+   <%= f.select :category,[["インナー","インナー"],["トップス", "トップス"],["アウター","アウター"],["ボトム", "ボトム"],],include_blank: "選択して下さい", class: :form__text %>
   </div>
 
   <div class="field">
