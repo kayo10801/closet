@@ -5,6 +5,8 @@
 - 自身のクローゼットの洋服管理に役立てることができる。
 # URL
 - https://closet-37448.herokuapp.com/
+# GIF動画
+- [![Image from Gyazo](https://i.gyazo.com/fb0dd2e81579ad6017e9faec0ad95779.gif)](https://gyazo.com/fb0dd2e81579ad6017e9faec0ad95779)
 
 # テスト用アカウント
 - Basic認証パスワード :10801

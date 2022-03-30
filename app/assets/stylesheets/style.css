@@ -40,7 +40,6 @@ a {
 .header {
   width: 100vh;
   background-color: #f1f8fe; 
-   
   padding: 20px 0;
   background-image: url('closet.png');
   background-size: cover;
@@ -58,15 +57,16 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #999;
+
 }
 
-.nav__left{
+  /* .nav__left{
   background-color: aquamarine;
-}
-.nav__right{
+  position: relative; 
+}  */
+/* .nav__right{
   background-color: antiquewhite;
-}
+}  */
 .logo {
   width: 200px;
   color: #f1f8fe;
@@ -181,13 +181,11 @@ transform: translateX(10%);
   
   }
   .nav-lists {
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: gold;
-    
+    width: 100px;
     
   }
   
@@ -197,15 +195,16 @@ transform: translateX(10%);
   .show-lists{
     width: 100px;
     position: absolute;
-    right: 370px;
+    right: 300px;
     top: 0;
     background-color: #ffffff;
-    margin: 300px;
+    
     
   }
   .background-red{
     background-color: #f7e6e6 ;
     color: white;
+
     
   }
   .pull-down-list{
