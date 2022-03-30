@@ -25,8 +25,9 @@
 - https://docs.google.com/spreadsheets/d/1FmQi7ZOsTY2EyXTN9zEBkUqyS_0oJbJBhEWIo8DugVw/edit#gid=982722306
 
 # 実装した機能、説明
-- 洋服の季節、カラーを入力して検索できる
-
+- 登録した情報を入力して検索できる
+# GIF動画
+- [![Image from Gyazo](https://i.gyazo.com/d5012f9704c60b29568b4823662c290f.gif)](https://gyazo.com/d5012f9704c60b29568b4823662c290f)
 # 実装予定の機能
 - 洋服の種類をカテゴリーに分け、JavaScriptを使用してページ遷移なしで、画面の表示を切り替え、検索しやすくする機能
 - 必須の入力項目として、洋服をいくらで購入したかを入力するpriceの項目を作成し、月にいくら洋服代として使ったかわかるようになる機能を実装したい
