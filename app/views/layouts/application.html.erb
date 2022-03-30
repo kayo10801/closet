@@ -12,21 +12,18 @@
 
   <body>
     <header class="header">
-
       <div class="inner">
         <div class="nav">
-                
           <div class="nav__left">
            <%= link_to "Closet.", root_path, class: :logo %>
            <h2 class ="h2">クローゼットの洋服を管理しよう</h2>
-           
             <ul class="nav-lists">
               <li class="list-status">
-                <span id="current-list">選択しよう</span>
+                <span id="current-list"></span>
                 </li>
                 <li class="background-red" id="lists">カテゴリー
                 </li>
-                <li>カテゴリー変更</li>
+            
              </ul>
             
               <ul class="show-lists hidden" id="pull-down">
