@@ -6,6 +6,7 @@ class CreateClothes < ActiveRecord::Migration[6.0]
       t.string :season, null: false
       t.string :color, null: false
       t.string :category, null: false
+      t.string :price, null: false
       t.timestamps
     end
   end
