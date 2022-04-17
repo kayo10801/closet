@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2022_03_19_142700) do
     t.string "season", null: false
     t.string "color", null: false
     t.string "category", null: false
+    t.string "price", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
