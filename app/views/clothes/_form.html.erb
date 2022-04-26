@@ -3,6 +3,7 @@
     <%= f.label :memo, "memo" %><br />
     <%= f.text_field :memo %>
   </div>
+<%# form_withはform_forとform_tagをどちらも同様に扱えるようにしたもの %>
 
   <div class='input-birth-wrap'>
     <%= f.label :date, "date" %><br />
@@ -24,6 +25,7 @@
     <%= f.label :season, "season" %><br />
     <%= f.select :season,[["春","春"],["夏", "夏"],["秋","秋"],["冬", "冬"]],include_blank: "選択して下さい", class: :form__text %>
   </div>
+  
 
    <div class="field">
    <%= f.label :color, "color" %><br />
