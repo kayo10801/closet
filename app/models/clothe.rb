@@ -6,6 +6,8 @@ class Clothe < ApplicationRecord
   validates :image, presence: true
   validates :category, presence: true
   validates :price, presence: true
+
+  # Railsのmodelとは、「データベースとのやり取りを行うクラスのこと」
   
   def self.search(search)
     
