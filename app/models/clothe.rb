@@ -8,7 +8,8 @@ class Clothe < ApplicationRecord
   validates :price, presence: true
 
   # Railsのmodelとは、「データベースとのやり取りを行うクラスのこと」
-  
+  # データベースを取り扱う
+  # modelのクラス名は、Memberのように頭が大文字の単数形
   def self.search(search)
     
     if search != ""
